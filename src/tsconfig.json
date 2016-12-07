@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "inlineSources": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "lib": ["dom", "es2015"],
+    "rootDirs": ["./"],
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noUnusedParameters": false,
+    "noUnusedLocals": false,
+    "typeRoots": [
+      "./node_modules/@types"
+    ]
+  },
+  "compileOnSave": true,
+  "exclude": [
+    "node_modules/*",
+    "config/helpers.js",
+    "config/webpack.common.js",
+    "config/webpack.dev.js",
+    "config/webpack.prod.js",
+    "webpack.config.js"
+  ]
+}

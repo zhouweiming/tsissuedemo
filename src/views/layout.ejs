@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang=zh-CN xml:lang=zh-CN>
+<head>
+  <% include _head_meta %>
+  <script>
+    if(!document.location.origin)
+      document.location.origin=document.location.protocol+"//"+document.location.hostname+(document.location.port?":"+document.location.port:"");
+  </script>
+</head>
+<body class=clearfix>
+  <app>
+    <div class=zloading id=video_loading>
+      <div></div>
+      <p> <span class=flower-loader></span> <span class=t>加载中...</span> </p>
+    </div>
+  </app>
+</body>
+<% if(env === "development") {%>
+  <script src="<%=baseurl%>/public/assets/common.js"></script>
+  <script src="<%=baseurl%>/public/assets/index.js"></script>
+<%}%>
+</html>
